@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favourite Five</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/89d504dd0e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+<body>
+        
+    <header>
+        <div class="container-header">
+            <div class="left-side">
+                <img src="images/header-img-1.png" alt="" srcset="">
+            </div>
+            <div class="middle-text">
+                <h1>My Favourite Five</h1>
+                <p>To become a great player, you've got to show real dedication and commitment to football, and you've got to be very humble and hard-working. And, above all, you've got to fight to make your dreams come true.</p>
+            </div>
+            <div class="right-side">
+                <img src="images/header-img-2.png" alt="" srcset="">
+            </div>
+        </div>
+    </header>
+<body>
+        
+    <main>
+        <div class="container">
+            <div class="contsiner-main bg-dark ">
+                <div class="left-part">
+                    <div class="all-players">
+                        <div class="my-card">
+                            <img src="images/Lionel-Messi.jpg" alt="">
+                            <div class="content">
+                                <h3 class="player-name">Lionel Messi</h3>
+                                <p>36 Goals &nbsp; 120 Assist</p>
+                                <button class="btn-player" onclick="addToName(this)">SELECT</button>
+                            </div>
+  
+                        </div>
+                        <div class="my-card">
+                            <img src="images/Cristiano Ronaldo.jpg" alt="">
+                            <div class="content">
+                                <h3 class="player-name">Cristiano Ronaldo</h3>
+                                <p>36 Goals &nbsp; 120 Assist</p>
+                                <button class="btn-player" onclick="addToName(this)">SELECT</button>
+                            </div>
+  
+                        </div>
+                        <div class="my-card">
+                            <img src="images/neymer.jpg" alt="">
+                            <div class="content">
+                                <h3 class="player-name">Neymar</h3>
+                                <p>36 Goals &nbsp; 120 Assist</p>
+                                <button class="btn-player" onclick="addToName(this)">SELECT</button>
+                            </div>
+  
+                        </div>
+                        <div class="my-card">
+                            <img src="images/Xavi.jpg" alt="">
+                            <div class="content">
+                                <h3 class="player-name">Xavi</h3>
+                                <p>36 Goals &nbsp; 120 Assist</p>
+                                <button class="btn-player" onclick="addToName(this)">SELECT</button>
+                            </div>
+  
+                        </div>
+                        <div class="my-card">
+                            <img src="images/Andres-Iniesta.jpg" alt="">
+                            <div class="content">
+                                <h3 class="player-name">Andres Iniesta</h3>
+                                <p>36 Goals &nbsp; 120 Assist</p>
+                                <button class="btn-player" onclick="addToName(this)">SELECT</button>
+                            </div>
+  
+                        </div>
+                        <div class="my-card">
+                            <img src="images/Zlatan-Ibrahimovic.jpeg" alt="">
+                            <div class="content">
+                                <h3 class="player-name">Zlatan Ibrahimovic</h3>
+                                <p>36 Goals &nbsp; 120 Assist</p>
+                                <button class="btn-player" onclick="addToName(this)">SELECT</button>
+                            </div>
+  
+                        </div>
+                        <div class="my-card">
+                            <img src="images/Robin-van-Persie.jpg" alt="">
+                            <div class="content">
+                                <h3 class="player-name">Robin van Persie</h3>
+                                <p>36 Goals &nbsp; 120 Assist</p>
+                                <button class="btn-player" onclick="addToName(this)">SELECT</button>
+                            </div>
+  
+                        </div>
+                        <div class="my-card">
+                            <img src="images/Andrea Pirlo.jpg" alt="">
+                            <div class="content">
+                                <h3 class="player-name">Andrea Pirlo</h3>
+                                <p>36 Goals &nbsp; 120 Assist</p>
+                                <button class="btn-player" onclick="addToName(this)">SELECT</button>
+                            </div>
+  
+                        </div>
+                        <div class="my-card">
+                            <img src="images/Yaya-Toure.jpg" alt="">
+                            <div class="content">
+                                <h3 class="player-name">Yaya Toure</h3>
+                                <p>36 Goals &nbsp; 120 Assist</p>
+                                <button class="btn-player" onclick="addToName(this)">SELECT</button>
+                            </div>
+  
+                        </div>
+                        
+                        
+                    </div>
+    
+                </div>
+                <div class="right-part">
+                    <div class="controls">
+                        <div class="selected-players">
+                            <h2>Selected -  <span id="total-number">0</span> </h2>
+                            <ul id="player-name-ul">
+                          
+                            </ul>
+                            <p id="player-list"></p>
+                        </div>
+                        <div class="amount-control">
+                            <h3>Budget</h3>
+
+                            <div class="per-player-amount">
+                                <label for="pin">Per Player </label> &nbsp;
+                                <input type="text" id="perPlayerAmount" name="pin" maxlength="8" size="8">
+                                <button id="btn-cal">Calculate</button>
+                            </div>
+
+                            <div class="player-total-price">
+                                <p>Player Expenses </p> <p>$ <span id="showPlayerAmount"></span> </p>
+                            </div>
+
+                            <div class="additional-amount">
+                                <div class="other-amount-1">
+                                    <label for="pin">Manager</label> &nbsp;
+                                    <input type="text" id="manager_input" name="pin" maxlength="8" size="8">
+                                </div>
+                                
+
+                                <div class="other-amount-2">
+                                    <label for="pin">Coach</label> &nbsp;
+                                    <input type="text" id="coach_input" name="pin" maxlength="8" size="8">
+
+                                </div>
+                                
+                                <button id="btn-Total-cal">Calculate Total</button>
+                            </div>
+
+                            <div class="player-total-price">
+                                <p>Total Price</p> <p style="color:rgb(245, 68, 92)">$ <span id="total_price">0</span> </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+    
+                </div>
+                  
+            </div>
+
+        </div>
+        
+    </main>
+</body>
+<script src="js/working.js"></script>
+</html>
